@@ -5,21 +5,21 @@ import MenuIcon from "@mui/icons-material/Menu";
 function Header() {
   return (
     <Container>
-      <a>
+      
         <img src="/images/logo.svg" alt="tesla logo" />
-      </a>
+      
       <Menu>
-        <a href="#">Model S</a>
+        <p>Model S</p>
 
-        <a href="#">Model 3</a>
+        <p>Model 3</p>
 
-        <a href="#">Model X</a>
+        <p>Model X</p>
 
-        <a href="#">Model Y</a>
+        <p>Model Y</p>
       </Menu>
       <RightMenu>
-        <a href="#">Shop</a>
-        <a href="#">Tesla Account</a>
+        <p>Shop</p>
+        <p>Tesla Account</p>
         <CustomMenu />
       </RightMenu>
     </Container>
@@ -45,11 +45,12 @@ const Menu = styled.div`
   align-items: center;
   justify-content: center;
   flex: 1;
-  a {
+  p {
     font-weight: 900;
     text-transform: uppercase;
     padding: 0 10px;
     flex-wrap: nowrap;
+    cursor: pointer;
   }
 
   @media (max-width: 768px) {
@@ -60,11 +61,12 @@ const Menu = styled.div`
 const RightMenu = styled.div`
   display: flex;
   align-items: center;
-  a {
+  p {
     font-weight: 900;
     text-transform: uppercase;
     margin-right: 10px;
     flex-wrap: nowrap;
+    cursor: pointer;
   }
 `;
 
